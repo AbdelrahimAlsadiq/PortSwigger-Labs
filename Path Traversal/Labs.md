@@ -8,3 +8,7 @@
 - Open any image in the web page and intercept the request using `BurpSuite's Proxy`
 - Change the filename parameter to `/etc/passwd`
 
+### Lab 3: File path traversal, traversal sequences stripped non-recursively.
+- Open any image in the web page and intercept the request using `BurpSuite's Proxy`
+- Change the filename parameter to `....//....//....//etc/passwd`
+

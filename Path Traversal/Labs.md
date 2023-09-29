@@ -12,3 +12,11 @@
 - Open any image in the web page and intercept the request using `BurpSuite's Proxy`
 - Change the filename parameter to `....//....//....//etc/passwd`
 
+### Lab 4: File path traversal, traversal sequences stripped with superfluous URL-decode.
+- Open any image in the web page and intercept the request using `BurpSuite's Proxy`
+- Change the filename parameter to `..%252f..%252f..%252fetc/passwd`
+
+### Lab 5: File path traversal, validation of start of path.
+- Open any image in the web page and intercept the request using `BurpSuite's Proxy`
+- Change the filename parameter to `/var/www/images/../../../etc/passwd`
+

